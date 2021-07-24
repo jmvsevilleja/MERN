@@ -1,10 +1,14 @@
 // console.log('Hello World!!');
 
 const express = require('express');
-
 const app = express();
 
-app.get('/', (req, res) => {
+// get variable in .env file
+require('dotenv/config');
+
+const api = process.env.API_URL;
+
+app.get(api + '/products', (req, res) => {
   res.send('Hello API');
 })
 

@@ -34,3 +34,15 @@ npm install express
 ```javascript
 app.get('/api');
 ```
+
+## Install dotenv
+
+```
+npm install dotenv
+```
+
+#### reading .env file
+
+```
+process.env.API_URL;
+```
